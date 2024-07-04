@@ -1,0 +1,50 @@
+
+.justify-content-end{
+    font-size: larger;
+    /* font-weight: bold; */
+    color:white;
+    background-color: rgb(60, 59, 59);
+}
+.nav_items_content{
+    margin:20px 10px;
+    padding:3px 7px;
+    color:white;
+}
+.titleHomePage{
+    height: 80vh;
+    background-color: antiquewhite;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.innerTitleDiv h1{
+    color:red;
+    font-size: 90px;
+    text-shadow: 2px 2px black;
+}
+.innerTitleDiv h5{
+    margin-bottom: 20px;
+}
+.browseNewsButton button{
+background-color: rgb(29, 120, 239);
+border-radius: 5px;
+padding:10px 20px;
+color:white;
+}
+.browseNewsButton button:hover{
+    background-color: green;
+    
+}
+.footerDiv{
+    height:10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footerDiv h6{
+    font-size: 12px;
+}
+.innerFooterDiv{
+    width:auto;
+    /* background-color: aqua; */
+}

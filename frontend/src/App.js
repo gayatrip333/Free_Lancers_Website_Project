@@ -15,7 +15,7 @@ function App() {
       <NavigationMenu/>
      <Routes>
       <Route path="/" element={<LandingPage/>}/>
-      <Route path="/browsepage" element={<BrowseNewsPage/>}/>
+      <Route path="/browsenewspage" element={<BrowseNewsPage/>}/>
       <Route path="/loginpage" element={<LoginPage/>}/>
       <Route path="/signuppage" element={<SignUpPage/>}/>
       <Route path="/aboutpage" element={<AboutPage/>}/>

@@ -5,10 +5,10 @@ import '../style/LoginPage.css'
 export default function LoginPage() {
   return (
     <div className="loginPageHoldingDiv">
-    <div className="OuterFormDiv">
+    <div className="OuterFormDiv1">
       <div className="InnerContentDic">
-      <div className="contentHoldingDiv">
-              <h1>Login here to upload the updates on your channel</h1>
+      <div className="typewriter">
+              <h1>Login here to upload your updates</h1>
             </div>
       </div>
             

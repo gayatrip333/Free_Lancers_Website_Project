@@ -1,10 +1,14 @@
 import React from 'react'
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import '../style/LandingPage.css'
+import { Navigate } from 'react-router-dom';
 
 export default function LandingPage() {
+
+  const navigate=useNavigate();
+
   return (
     <div>
        <div>
@@ -14,7 +18,7 @@ export default function LandingPage() {
         <i><h1>NEWS CORE</h1>
         <h5>Get all the news and updates from different channels and up-to-date!!!</h5></i>
         <div className="browseNewsButton"> 
-            <button><b> Browse News  ▶▶ </b> </button> 
+            <button  onClick={()=>navigate("/browsenewspage")}  ><b> Browse News  ▶▶ </b> </button> 
         </div>
         </div>    
       </div>

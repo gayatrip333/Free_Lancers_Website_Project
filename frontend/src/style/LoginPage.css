@@ -1,18 +1,51 @@
 .loginPageHoldingDiv{
     width:100%;
     display: flex;
+    height:89vh;
+    padding:0px 100px 0px 20px;
+    background-color: #282c34;
 }
 .OuterFormDiv{
     width:50%;
     display: flex;
     justify-content: center;
+    align-items: center;   
+}
+.OuterFormDiv1{
+  display: flex;
+    justify-content: center;
     align-items: center;
-    height:80vh;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+}
+.typewriter{
+  padding-left: 20px;
+}
+.typewriter h1 {
+  overflow: hidden; /* Ensures the text is not visible initially */
+  border-right: .15em solid orange; /* Creates the cursor effect */
+  white-space: nowrap; /* Prevents text from wrapping */
+  margin: 0 auto; /* Centers the text */
+  letter-spacing: .15em; /* Adds space between letters */
+  animation: typing 4s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+/* Typewriter effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* Cursor blink effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
 }
 .form-border {
     border: 1px solid #ccc;
     padding: 20px;
-    width:50%;
+    width:90%;
     height:70vh;
     border-radius: 5px;
     background-color: #f8f9fa; 

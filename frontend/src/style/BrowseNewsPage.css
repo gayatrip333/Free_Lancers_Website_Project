@@ -1,0 +1,54 @@
+.bodyBroseNewsPage {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    height:89vh;
+}
+.card {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* max-width: 1200px; */
+    margin: 10px auto;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card img {
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+    flex: 1;
+}
+
+.card-content h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.card-content p {
+    margin: 10px 0 0;
+    color: #666;
+}
+.cardButtonDiv{
+    display: flex;
+    margin-top: 20px;
+    align-self: baseline;
+    justify-content: center;
+}
+.cardButtonDiv button{
+    width:40%;
+    background-color: green;
+    border-radius:5px ;
+    color:white;
+    /* font-weight: bold; */
+    padding: 5px 7px;
+    border: 1px solid greenyellow;
+  }

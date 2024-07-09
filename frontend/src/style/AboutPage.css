@@ -1,0 +1,13 @@
+.AboutPageOuterDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 89vh;
+    background-color: #282c34;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+

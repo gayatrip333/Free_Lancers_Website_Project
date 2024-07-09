@@ -1,15 +1,4 @@
 
-.justify-content-end{
-    font-size: larger;
-    /* font-weight: bold; */
-    color:white;
-    background-color: rgb(60, 59, 59);
-}
-.nav_items_content{
-    margin:20px 10px;
-    padding:3px 7px;
-    color:white;
-}
 .titleHomePage{
     height: 80vh;
     background-color: antiquewhite;

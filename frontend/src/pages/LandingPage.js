@@ -9,18 +9,6 @@ export default function LandingPage() {
     <div>
        <div>
       
-      <Nav className="justify-content-end" activeKey="/home">
-        <Nav.Item>
-          <Nav.Link href="/home" className='nav_items_content'>Create Account</Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link eventKey="link-1" className='nav_items_content'>Login</Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link eventKey="link-1" className='nav_items_content'>About</Nav.Link>
-        </Nav.Item>
-      </Nav>
-
       <div className="titleHomePage">
         <div className="innerTitleDiv">
         <i><h1>NEWS CORE</h1>

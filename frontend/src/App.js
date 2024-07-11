@@ -7,6 +7,7 @@ import LoginPage from './pages/LoginPage';
 import SignUpPage from './pages/SignUpPage';
 import AboutPage from './pages/AboutPage';
 import NavigationMenu from './pages/NavigationMenu';
+import ChannelWiseNews from './pages/ChannelWiseNews'
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
      <Routes>
       <Route path="/" element={<LandingPage/>}/>
       <Route path="/browsenewspage" element={<BrowseNewsPage/>}/>
+      <Route path="/channelwisenewspage" element={<ChannelWiseNews/>}/>
       <Route path="/loginpage" element={<LoginPage/>}/>
       <Route path="/signuppage" element={<SignUpPage/>}/>
       <Route path="/aboutpage" element={<AboutPage/>}/>

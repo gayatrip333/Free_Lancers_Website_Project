@@ -1,48 +1,49 @@
 import React from 'react'
 import '../style/BrowseNewsPage.css'
-import SignUpPageBackgroundImage from '../assets/SignUpPageBackgroundImage.jpeg'
+import { Link, useNavigate } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 export default function BrowseNewsPage() {
+
+  const [articles, setArticles] = useState([]);
+  const apiKey = 'd39fa5245db94048a0520c17a5661098'; // Replace with your actual API key
+  const navigate=useNavigate();
+  useEffect(() => {
+    const fetchNews = async () => {
+      try {
+        const response = await fetch(`https://newsapi.org/v2/top-headlines?country=us&apiKey=${apiKey}`);
+        const data = await response.json();
+        setArticles(data.articles);
+      } catch (error) {
+        console.error('Error fetching news:', error);
+      }
+    };
+
+    fetchNews();
+  }, []);
+
   return (
     <div className='bodyBroseNewsPage'>
-
-      <div class="card">
-        <img src={SignUpPageBackgroundImage} alt="Image Description" />
-        <div class="card-content">
-          <h2>Card Title 2</h2>
-          <p>This is a summary of the content for card 2. It can be a brief description or any other Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit blanditiis a accusamus numquam eveniet perferendis quas facilis explicabo, totam voluptates quod quis sapiente non. Omnis modi rerum quidem iste minima. relevant information. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo rerum molestias minus. Adipisci aliquid minus, molestiae corporis inventore impedit pariatur dolorum, laboriosam reprehenderit in facilis molestias quidem qui consectetur illo consequuntur. Officia, temporibus asperiores hic nesciunt dolores dignissimos delectus a!</p>
-          <div className="cardButtonDiv">
-            <button  > Visit Channel ▶▶</button>
+      <div className="NavigatingButtonsBrowseNewsPage">
+        <div className="innerNavigatingButtonsBrowseNewsPage">
+          <div className="innerNavigatingButtonsBrowseNewsPagebuttonDiv">
+            <button onClick={()=>navigate("/browsenewspage")}>See Global News</button>
+            <button onClick={()=>navigate("/channelwisenewspage")}>See Channel Wise</button>
           </div>
         </div>
       </div>
-      <div class="card">
-        <img src={SignUpPageBackgroundImage} alt="Image Description" />
-        <div class="card-content">
-          <h2>Card Title 2</h2>
-          <p>This is a summary of the content for card 2. It can be a brief description or any other Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit blanditiis a accusamus numquam eveniet perferendis quas facilis explicabo, totam voluptates quod quis sapiente non. Omnis modi rerum quidem iste minima. relevant information. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo rerum molestias minus. Adipisci aliquid minus, molestiae corporis inventore impedit pariatur dolorum, laboriosam reprehenderit in facilis molestias quidem qui consectetur illo consequuntur. Officia, temporibus asperiores hic nesciunt dolores dignissimos delectus a!</p>
-          <div className="cardButtonDiv">
-            <button  > Visit Channel ▶▶</button>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <img src={SignUpPageBackgroundImage} alt="Image Description" />
-        <div class="card-content">
-          <h2>Card Title 2</h2>
-          <p>This is a summary of the content for card 2. It can be a brief description or any other Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit blanditiis a accusamus numquam eveniet perferendis quas facilis explicabo, totam voluptates quod quis sapiente non. Omnis modi rerum quidem iste minima. relevant information. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo rerum molestias minus. Adipisci aliquid minus, molestiae corporis inventore impedit pariatur dolorum, laboriosam reprehenderit in facilis molestias quidem qui consectetur illo consequuntur. Officia, temporibus asperiores hic nesciunt dolores dignissimos delectus a!</p>
-          <div className="cardButtonDiv">
-            <button  > Visit Channel ▶▶</button>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <img src={SignUpPageBackgroundImage} alt="Image Description" />
-        <div class="card-content">
-          <h2>Card Title 2</h2>
-          <p>This is a summary of the content for card 2. It can be a brief description or any other Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit blanditiis a accusamus numquam eveniet perferendis quas facilis explicabo, totam voluptates quod quis sapiente non. Omnis modi rerum quidem iste minima. relevant information. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo rerum molestias minus. Adipisci aliquid minus, molestiae corporis inventore impedit pariatur dolorum, laboriosam reprehenderit in facilis molestias quidem qui consectetur illo consequuntur. Officia, temporibus asperiores hic nesciunt dolores dignissimos delectus a!</p>
-          <div className="cardButtonDiv">
-            <button  > Visit Channel ▶▶</button>
-          </div>
+      <div className="App">
+        <div className="news-container">
+          {articles.map((article, index) => (
+            <div key={index} className="news-article">
+              <div class="card">
+              <img src={article.urlToImage} alt="image not available" />
+                <div class="card-content">
+                  <h2>{article.title}</h2>
+                  <p>{article.description}</p>
+                  </div>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </div>

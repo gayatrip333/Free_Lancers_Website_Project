@@ -1,0 +1,22 @@
+.channelWiseBroseNewsPage{
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    height: 89vh;
+}
+.innerNavigatingButtonsChannelWiseNewsPage {
+    display: flex;
+    justify-content: end;
+}
+
+.innerNavigatingButtonsChannelWiseNewsPagebuttonDiv button {
+    margin: 0px 20px;
+    background-color: green;
+    color: white;
+    padding: 5px 7px;
+    border-radius: 5px;
+}
+.innerNavigatingButtonsChannelWiseNewsPagebuttonDiv button:hover {
+    background-color: rgb(18, 136, 209);
+}

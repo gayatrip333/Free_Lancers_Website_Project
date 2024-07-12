@@ -8,6 +8,8 @@ import SignUpPage from './pages/SignUpPage';
 import AboutPage from './pages/AboutPage';
 import NavigationMenu from './pages/NavigationMenu';
 import ChannelWiseNews from './pages/ChannelWiseNews'
+import ChannelInfo from './pages/ChannelInfo';
+import UploadUpdateNews from './pages/UploadUpdateNews';
 
 
 function App() {
@@ -21,6 +23,8 @@ function App() {
       <Route path="/loginpage" element={<LoginPage/>}/>
       <Route path="/signuppage" element={<SignUpPage/>}/>
       <Route path="/aboutpage" element={<AboutPage/>}/>
+      <Route path="/channelinfo" element={<ChannelInfo/>}/>
+      <Route path="/uploadupdatenews" element={<UploadUpdateNews/>}/>
      </Routes>
     </div>
   );

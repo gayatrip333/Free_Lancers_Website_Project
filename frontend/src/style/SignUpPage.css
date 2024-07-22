@@ -13,12 +13,12 @@
     height:89vh;
 }
 #innerSignUpDivId2{
-    padding:100px 100px;
+    padding:20px 100px 100px 100px;
     background-color:azure;
 }
 .form-borderSignUpPage{
-    margin-top: 50px;
-    height:89vh;  
+    margin-top: 20px;
+      
 }
 .headingSignUpPage h1 {
     color:rgb(60, 3, 114);
@@ -40,6 +40,9 @@
   @keyframes blink-caretSignUp {
     from, to { border-color: transparent }
     50% { border-color: orange }
+  }
+  .SignUpFormmb-3{
+    margin: 10px 0px;
   }
   .SignUpFormButton{
     align-self: baseline;

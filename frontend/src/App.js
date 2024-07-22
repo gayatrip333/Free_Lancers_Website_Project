@@ -10,6 +10,7 @@ import NavigationMenu from './pages/NavigationMenu';
 import ChannelWiseNews from './pages/ChannelWiseNews'
 import ChannelInfo from './pages/ChannelInfo';
 import UploadUpdateNews from './pages/UploadUpdateNews';
+import EditProfileInformation from './pages/EditProfileInformation';
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
       <Route path="/aboutpage" element={<AboutPage/>}/>
       <Route path="/channelinfo" element={<ChannelInfo/>}/>
       <Route path="/uploadupdatenews" element={<UploadUpdateNews/>}/>
+      <Route path="/editprofileinformation" element={<EditProfileInformation/>}/>
      </Routes>
     </div>
   );

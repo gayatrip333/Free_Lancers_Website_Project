@@ -1,0 +1,99 @@
+.outerEditProfileInfoDiv{
+        display: flex;
+}
+.innerEditProfileInfoDivs{
+        width:50%;
+}
+#innerEditProfileInfoDivsId1{
+    background-image: url(../assets/SignUpPageBackgroundImage.jpeg);
+    background-size: 100% 89vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.editProfileInformationImageClass{
+    width:100%;
+    height:89.5vh; 
+}
+.formEditProfileInfoDiv{
+    width: 65%; 
+    height:50%; 
+    background-color: white;
+    box-shadow: 2px 2px black;
+    border-radius: 10px;
+}
+.editProfileFormText{
+    font-size: x-large;
+}
+.editProfileFormInputField{
+    width:100%;
+    margin-top: 20px;
+}
+#actualInnerFormDivsId1{
+    display: none;
+    width:100%;
+    justify-content: center;
+    align-items:flex-start;
+}
+#actualInnerFormDivsId2{
+    display: none;
+    width:100%;
+    justify-content: center;
+    align-items: flex-start;
+}
+#actualInnerFormDivsId3{
+    display: none;
+    width:100%;
+    justify-content: center;
+    align-items: flex-start;
+}
+.backButtonEditProfileInfo{
+    position: absolute;
+    top:90px;
+    left:30px;
+    padding:5px 15px;
+    background-color: green;
+    color:white;
+    font-size: larger;
+}
+.backButtonEditProfileInfo:hover{
+    background-color: rgb(59, 146, 239);
+}
+.buttonholdingDiv{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+}
+.buttonholdingDiv{
+    width:100%;
+    border-radius: 60px;
+    border: none;
+    padding:10px;
+    color:white;
+    font-size: larger;
+    text-shadow: 1px 1px black;
+    font-weight: bold;
+    height:89.5vh;
+}
+.buttonholdingDesignDiv{
+    padding:10px 10px;
+    border:1px solid black;
+    margin: 20px 0px;
+    width:80%;
+    border-radius: 60px;
+}
+.buttonholdingDiv .buttonholdingDesignDiv button{
+    box-shadow: 1px 1px white;
+    border-radius: 60px;
+    color:white;
+    padding: 5px 0px;
+    width:100%;
+    background: linear-gradient(to bottom right,rgb(239, 27, 179), purple);
+}
+.buttonholdingDiv .buttonholdingDesignDiv button:hover{
+    
+    background: linear-gradient(to right,rgb(5, 96, 207), rgb(103, 226, 245));
+
+}

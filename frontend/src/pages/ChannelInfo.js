@@ -8,7 +8,7 @@ export default function ChannelInfo() {
     <div className='channelInfoOuterDiv'>
         <div className='optionHoldingDivChannelInfo'>
             <button onClick={()=>navigate("/uploadupdatenews")}>Upload News Updates</button>
-            <button>Edit Profile Information</button>
+            <button  onClick={()=>navigate("/editprofileinformation")} >Edit Profile Information</button>
         </div>
       <h1 className='channelInfoPageInnerDivElements'>News Channel 1</h1>
       <img src={SignUpPageBackgroundImage} alt="" className='channelInfoLogoImage' />
